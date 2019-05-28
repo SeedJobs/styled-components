@@ -28,17 +28,15 @@
     "format": "eslint ./**/*.js --fix",
     "lint": "eslint src",
     "prettier": "prettier */**/*.js --write",
-    "prepublishOnly": "run-s build",
     "lint-staged": "lint-staged",
     "dev": "cross-env BABEL_ENV=cjs babel-node example/startServer.js",
     "prebenchmarks": "yarn run build:benchmarks",
     "benchmarks": "node benchmarks/run-headless.js",
-    "build:benchmarks": "(cd benchmarks && yarn && yarn run build)",
-    "postinstall": "node ./scripts/postinstall.js || exit 0"
+    "build:benchmarks": "(cd benchmarks && yarn && yarn run build)"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/styled-components/styled-components.git"
+    "url": "git+https://github.com/njsfield/styled-components.git"
   },
   "files": [
     "CODE_OF_CONDUCT.md",
